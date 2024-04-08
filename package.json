@@ -1,0 +1,23 @@
+{
+  "name": "csshook",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "repository": "git@github.com:tlonny/csshook.git",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "tlonny <t@lonny.io>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@types/react": "^18.2.74",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "react": "^18.2.0",
+    "typescript": "^5.4.4"
+  }
+}
