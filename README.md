@@ -15,7 +15,7 @@ const paddingStyleTemplate = (cls, params : {padding: number}) => `
 
 const useComponentStyle = style((cls, params : {padding : number}) => [
     redBackgroundStyleTemplate(cls), paddingStyleTemplate(cls, params)
-].join("\n")
+].join("\n"))
 
 
 const MyComponent = () => {
