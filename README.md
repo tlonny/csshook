@@ -1,5 +1,11 @@
 # csshook
 
+<div align="center">
+    <img src="logo.png">
+</div>
+
+## Summary
+
 `csshook` is a minimal, lightweight, dependency-free library that allows for effortless inline styling of React components using hooks.
 
 ```typescript
