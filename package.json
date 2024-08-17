@@ -1,12 +1,12 @@
 {
   "name": "csshook",
-  "version": "0.0.3",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.4",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": ["dist"],
   "repository": "git@github.com:tlonny/csshook.git",
   "scripts": {
-    "build": "tsc"
+    "build": "bun run build.ts"
   },
   "author": "tlonny <t@lonny.io>",
   "license": "MIT",
@@ -15,8 +15,10 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/node": "^20.12.5",
     "@types/react": "^18.2.74",
+    "bun-plugin-dts": "^0.2.3",
     "react": "^18.2.0",
     "typescript": "^5.4.4"
   }

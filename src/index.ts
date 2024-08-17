@@ -1,6 +1,8 @@
 import { useLayoutEffect, useState } from "react"
 
 type EmptyObject = { [key: string] : never }
+type Node = { clsName: string, htmlElement: HTMLStyleElement, key: string, count: number }
+
 export type StyleGenerator<T> = (params: T) => string
 export type StyleTemplate<T> = (clsName: string, params: T) => string
 
@@ -8,7 +10,7 @@ let uniqueIDGenerator = 0
 
 export const style = <T extends object = EmptyObject>(styleFn : StyleTemplate<T>) : StyleGenerator<T> => {
     // A memory cache for each generated CSS fragment.
-    const nodeCache = {}
+    const nodeCache : {[key : string] : Node | undefined }= {}
 
     return ((params : T) : string => {
         // We determine the cache key by generating the CSS fragment with a special clsName ("").
