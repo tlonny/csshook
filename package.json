@@ -1,9 +1,9 @@
 {
   "name": "csshook",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "files": ["dist"],
+  "files": ["build"],
   "repository": "git@github.com:tlonny/csshook.git",
   "scripts": {
     "build": "bun run build.ts"
