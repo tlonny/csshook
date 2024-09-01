@@ -1,6 +1,6 @@
 {
   "name": "csshook",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "files": ["build"],
@@ -11,7 +11,6 @@
   "author": "tlonny <t@lonny.io>",
   "license": "MIT",
   "peerDependencies": {
-    "@types/react": "^18.2.74",
     "react": "^18.2.0"
   },
   "devDependencies": {
